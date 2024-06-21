@@ -1,5 +1,3 @@
-Certainly! Here are the steps to add an Apps Script to Google Sheets:
-
 ### Steps to Add an Apps Script to Google Sheets
 
 1. **Open Your Google Sheet:**
