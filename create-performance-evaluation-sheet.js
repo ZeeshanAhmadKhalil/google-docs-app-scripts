@@ -1,7 +1,7 @@
 function createSheet() {
   // Get active spreadsheet and create a new sheet with the current month and year as the name
   var ss = SpreadsheetApp.getActiveSpreadsheet()
-  var currentMonth = new Date("9/1/2024")
+  var currentMonth = new Date("7/1/2024")
   var sheetName = Utilities.formatDate(
     currentMonth,
     Session.getScriptTimeZone(),
