@@ -12,11 +12,13 @@ function copyNamedRangeWithFormatting() {
   }
 
   var monthlyExpense = SpreadsheetApp.getActiveSpreadsheet()
-  var sourceSheet = monthlyExpense.getSheetByName("June 2024")
-  var targetSheet = sharableMonthlyExpense.getActiveSheet()
-  targetSheet.setName("June 2024")
 
-  var namedRange = monthlyExpense.getRangeByName("SharebleDataJune2024")
+  var targetSheet = sharableMonthlyExpense.getSheetByName("July 2024")
+  if (targetSheet == null)
+    targetSheet = sharableMonthlyExpense.insertSheet("July 2024")
+  else targetSheet.clear()
+
+  var namedRange = monthlyExpense.getRangeByName("SharebleDataJuly2024")
 
   var values = namedRange.getValues()
   var backgroundColors = namedRange.getBackgrounds()
