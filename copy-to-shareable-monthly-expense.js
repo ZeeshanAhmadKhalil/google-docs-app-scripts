@@ -8,7 +8,7 @@ function copyNamedRangeWithFormatting() {
       existingSpreadsheet.getId()
     )
   } else {
-    sharableMonthlyExpense = SpreadsheetApp.create("Shareble Monthly Expense")
+    sharableMonthlyExpense = SpreadsheetApp.create("Shareble Monthly Expense") 
   }
 
   var monthlyExpense = SpreadsheetApp.getActiveSpreadsheet()
